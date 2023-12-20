@@ -1,5 +1,339 @@
+/* Poppins, Roboto & Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+/*
+Notes : 
+
+- Jost font for title
+- Poppins font for normal text
+*/
+
+:root {
+  /* Base color */
+  --white: #fff;
+
+  --primaryTextColor: #fff; /* Untuk title atau judul */
+  --secondaryTextColor: #aaaaaa; /* Untuk text biasa seperti paragraph contohnya */
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3fe;
+
+  --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
+
+  --sectionPadding: 6rem 0;
+
+  --itemBorderRadius: 0.7rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0b0a;
+  color: var(--primaryTextColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primaryTextColor);
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem; /* 16 px */
+  line-height: 1.9rem; /*30.4 px */
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+/* Utility Classes */
+.header-container {
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  background: url("../images/food-dark.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  /* we use flex here so we can fill up the remaining height in #hero */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Info */
+#header-info {
+  padding: 0.5rem 0;
+  background: #000000;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-info-items {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.header-info-items div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.87rem;
+}
+
+/* because we use scale, then we need to use translate so it fit on the center position */
+.info-social a svg {
+  transform: scale(0.7) translateY(5px);
+}
+
+.header-info-items svg {
+  transform: scale(0.7);
+}
+
+.header-info-items div span {
+  color: #ffffffdb;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+/* Logo and navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav ul li a {
+  color: #fff;
+}
+
+.nav h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Hero */
+#hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-cta button {
+  cursor: pointer;
+  border: 2px solid var(--white);
+  padding: 0.75rem 2rem;
+  background: transparent;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.hero-cta button:hover {
+  background: var(--white);
+  color: #000000;
+}
+
+/* About */
+.about {
+  max-width: 700px;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.about p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+/* Menu */
+.menu {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.menu-title {
+  margin-bottom: 2.5rem;
+  width: 450px;
+  margin: 0 auto 3rem;
+}
+
+.menu-title h5 {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.menu-title h1 {
+  font-size: 2.2rem;
+}
+
+.sub-menu h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.sub-menu p {
+  color: var(--secondaryTextColor);
+}
+
+.standing-line {
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  margin: 1rem auto 1.5rem;
+}
+
+/* Menu details */
+.menu-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.menu-item h4 {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  /* margin-bottom: .5rem; */
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+}
+
+.menu-item div:last-child {
+  color: var(--secondaryTextColor);
+  font-weight: 200;
+}
+
+/* Menu carousel */
+.menu-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-carousel article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 20s linear infinite;
+}
+.menu-carousel img {
+  display: block;
+  width: 100%;
+}
+
+.menu-carousel article.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.menu-carousel div {
+  width: 100%;
+}
+
+.menu-carousel ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-carousel li {
+  width: 100%;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

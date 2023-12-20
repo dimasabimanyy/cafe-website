@@ -6,97 +6,346 @@
     <link rel="stylesheet" href="/styles/style.css" />
     <title>Cafe Website</title>
   </head>
+  <body>
     <!-- Header -->
     <header>
-      
-    </header>
-    <!-- End header -->
+      <div id="header-info">
+        <div class="header-info header-container">
+          <div class="header-info-items">
+            <!-- Location -->
+            <div>
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  fill="#FFF"
+                  d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 2c5.519 0 10 4.481 10 10s-4.481 10-10 10-10-4.481-10-10 4.481-10 10-10zm1.476 12.955c.988-.405 1.757-1.211 2.116-2.216l2.408-6.739-6.672 2.387c-1.006.36-1.811 1.131-2.216 2.119l-3.065 7.494 7.429-3.045zm-.122-4.286c.551.551.551 1.446 0 1.996-.551.551-1.445.551-1.996 0-.551-.55-.551-1.445 0-1.996.551-.551 1.445-.551 1.996 0z"
+                />
+              </svg>
+              <span> 317 Pacific C, Huntington CA 4538 </span>
+            </div>
 
-    <!-- Main -->
-    <main>
-      <!-- About -->
-      <section id="about" class="about main-container">
-        <h1 class="about-title">
-          The restaurant
-        </h1>
+            <!-- Phone -->
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FFF"
+                  d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z"
+                />
+              </svg>
+              <span> 123-456-789 </span>
+            </div>
 
-        <div class="about-items">
-          <div class="about-item">
-            <div>01</div>
-            <div class="about-item-title">Traditional steakhouse, modern twist</div>
-            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <!-- Email -->
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FFF"
+                  d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                />
+              </svg>
+              <span> 317 Pacific C, Huntington CA 4538 </span>
+            </div>
           </div>
-          <div class="about-item">
-            <div>02</div>
-            <div class="about-item-title">Serving the finest cut of the meat</div>
-            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+
+          <div class="header-info-items info-social">
+            <a href="https://instagram.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FFF"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://youtube.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FFF"
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://x.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FFF"
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                />
+              </svg>
+            </a>
           </div>
-          <div class="about-item">
-            <div>03</div>
-            <div class="about-item-title">Located in the heart of the city</div>
-            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Reservation -->
-      <section id="reservation" class="reservation main-container">
-        <h1 class="reservation-title">
-          Make a reservation
-        </h1>
-        <p>To help us find the best table for you and your community</p>
-
-        <div class="reservation-items">
-          <div class="reservation-item">
-            <div>Party size</div>
-            <input type="text">
-          </div>
-
-          <div class="reservation-item">
-            <div>Date</div>
-            <input type="text">
-          </div>
-
-          <div class="reservation-item">
-            <div>Time</div>
-            <input type="text">
-          </div>
-
-          <div class="reservation-item">
-            <button>Cari Meja</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Food Info -->
-      <div id="food" class="food main-container">
-        <h1>Steak perfection takes time</h1>
-        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-      </div> 
-
-      <!-- Drink/Bar info -->
-      <div id="bar" class="bar main-container">
-        <h1>Have a drink at the bar</h1>
-        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-      </div> 
-
-      <!-- Gallery -->
-      <div id="gallery" class="gallery main-container">
-        <h1>Gallery</h1>
-
-        <div class="gallery-wrapper">
-          Gambar disini
         </div>
       </div>
 
-      <!-- Contact & location -->
-    </main>
-    <!-- End main -->
+      <!-- Logo and Navigation -->
+      <nav>
+        <div class="nav header-container">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+          </ul>
+
+          <h1>Soul Kitchen</h1>
+
+          <ul>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero main-container">
+          <h4>Enjoy an unforgettable experience!</h4>
+          <!-- kratos make typewriter effect on text above -->
+          <h1>Soul Kitchen</h1>
+          <div class="hero-cta">
+            <button>Lihat menu</button>
+            <button>Booking meja</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- End header -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="about main-container">
+        <p>
+          SOUL KITCHEN, founded in 2022, is dedicated to all those who love to
+          wander far and wide. We invite you on a wholesome culinary adventure,
+          where you’ll explore undiscovered gourmet experiences.
+        </p>
+        <p>Thank you for creating lasting memory with us.</p>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+      <div class="menu main-container">
+        <div class="menu-title">
+          <h5>Explore</h5>
+          <h1>Our Menu</h1>
+          <p>
+            Picky eaters, adventurous eaters, whatever your taste, we have
+            something for you.
+          </p>
+        </div>
+
+        <!-- Makanan utama -->
+        <div class="sub-menu">
+          <h2>Small Bites</h2>
+          <p>Order for the table and spread loves.</p>
+
+          <div class="standing-line"></div>
+
+          <!-- Detail menu dan harga -->
+          <div class="menu-details">
+            <div class="menu-detail">
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+            </div>
+
+            <div class="menu-detail">
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+            </div>
+
+            <div class="menu-detail">
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+
+              <div class="menu-item">
+                <div>
+                  <h4>Green papaya salad</h4>
+                  <p>Shrimp, chili and lime</p>
+                </div>
+                <div>Rp. 20k</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minuman -->
+
+          <!-- Makanan ringan -->
+        </div>
+      </div>
+    </section>
+
+    <div class="menu-carousel">
+      <article>
+        <div>
+          <ul>
+            <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+            <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Reservation -->
+    <section id="reservation" class="reservation main-container">
+      <h1 class="reservation-title">Make a reservation</h1>
+      <p>To help us find the best table for you and your community</p>
+
+      <div class="reservation-items">
+        <div class="reservation-item">
+          <div>Party size</div>
+          <input type="text" />
+        </div>
+
+        <div class="reservation-item">
+          <div>Date</div>
+          <input type="text" />
+        </div>
+
+        <div class="reservation-item">
+          <div>Time</div>
+          <input type="text" />
+        </div>
+
+        <div class="reservation-item">
+          <button>Cari Meja</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Info -->
+    <div id="food" class="food main-container">
+      <h1>Steak perfection takes time</h1>
+      <p>
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+        Just click “Edit Text” or double click me to add your own content and
+        make changes to the font. I'm a paragraph. Click here to add your own
+        text and edit me. It’s easy. Just click “Edit Text” or double click me
+        to add your own content and make changes to the font.
+      </p>
+    </div>
+
+    <!-- Drink/Bar info -->
+    <div id="bar" class="bar main-container">
+      <h1>Have a drink at the bar</h1>
+      <p>
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+        Just click “Edit Text” or double click me to add your own content and
+        make changes to the font. I'm a paragraph. Click here to add your own
+        text and edit me. It’s easy. Just click “Edit Text” or double click me
+        to add your own content and make changes to the font.
+      </p>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="gallery main-container">
+      <h1>Gallery</h1>
+
+      <div class="gallery-wrapper">Gambar disini</div>
+    </div>
+
+    <!-- Contact & location -->
 
     <!-- Footer -->
     <footer>
       <!-- Copyright -->
     </footer>
-      <!-- End footer -->
+    <!-- End footer -->
   </body>
 </html>
