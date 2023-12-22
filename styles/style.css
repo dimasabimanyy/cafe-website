@@ -76,9 +76,51 @@ a {
 }
 
 /* Utility Classes */
-.header-container {
+.large-container {
   width: 92.5%;
   margin: 0 auto;
+}
+
+/* Section Classes */
+.sub-section-title {
+  text-align: center;
+}
+
+.sub-section-title h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.sub-section-title p {
+  color: var(--secondaryTextColor);
+}
+
+.standing-line {
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  margin: 1rem auto 2rem;
+}
+
+/* Menu Title Style */
+.menu-title {
+  margin-bottom: 2.5rem;
+  width: 450px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.menu-title h5 {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.menu-title h1 {
+  font-size: 2.2rem;
 }
 
 /* Header */
@@ -92,6 +134,10 @@ header {
   /* we use flex here so we can fill up the remaining height in #hero */
   display: flex;
   flex-direction: column;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Header Info */
@@ -208,7 +254,7 @@ header {
 /* About */
 .about {
   max-width: 700px;
-  padding: 6rem 0;
+  padding: var(--sectionPadding);
   text-align: center;
 }
 
@@ -224,43 +270,8 @@ header {
 
 /* Menu */
 .menu {
-  padding: 6rem 0;
+  padding: 7rem 0 3rem;
   text-align: center;
-}
-
-.menu-title {
-  margin-bottom: 2.5rem;
-  width: 450px;
-  margin: 0 auto 3rem;
-}
-
-.menu-title h5 {
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-}
-
-.menu-title h1 {
-  font-size: 2.2rem;
-}
-
-.sub-menu h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0.75rem;
-}
-
-.sub-menu p {
-  color: var(--secondaryTextColor);
-}
-
-.standing-line {
-  width: 2px;
-  height: 50px;
-  background-color: white;
-  margin: 1rem auto 1.5rem;
 }
 
 /* Menu details */
@@ -297,6 +308,7 @@ header {
 .menu-carousel {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 6rem;
 }
 
 .menu-carousel article {
@@ -336,4 +348,126 @@ header {
   100% {
     transform: translateX(-50%);
   }
+}
+
+@keyframes bannermoveright {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+/* Reservation */
+.reservation {
+  padding: var(--sectionPadding);
+}
+
+.reservation-items {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+}
+
+.reservation-item-info div,
+.reservation-item-info h3 {
+  margin-bottom: 1.2rem;
+}
+
+.reservation-item-form div {
+  margin-bottom: 1.5rem;
+}
+
+.reservation-item-form label {
+  display: block;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+}
+
+.reservation-item-form input,
+.reservation-item-form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #444444;
+  padding: 0.5rem 1.3rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+
+.reservation-item-form button {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* Contact & Location */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map {
+  margin-bottom: -5px; /* untuk nutupin space aneh bawaan dari maps */
+}
+
+.contact-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-info h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact-info-phone {
+  margin: 1rem 0;
+}
+
+.contact-info-social a {
+  margin: 0 1rem;
+}
+
+.contact-info-social svg {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background: #2a292b;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-mid {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.footer-right,
+.footer-left {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+}
+
+.footer-right {
+  text-align: right;
 }
