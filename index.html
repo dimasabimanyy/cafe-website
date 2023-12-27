@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Cafe Website</title>
   </head>
   <body>
@@ -11,7 +15,11 @@
     <header>
       <div id="header-info">
         <div class="header-info large-container">
-          <div class="header-info-items">
+          <div
+            class="header-info-items"
+            data-aos="fade-in"
+            data-aos-delay="1200"
+          >
             <!-- Location -->
             <div>
               <svg
@@ -62,7 +70,11 @@
             </div>
           </div>
 
-          <div class="header-info-items info-social">
+          <div
+            class="header-info-items info-social"
+            data-aos="fade-in"
+            data-aos-delay="1200"
+          >
             <a href="https://instagram.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,28 +124,55 @@
       <nav>
         <div class="nav large-container">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li data-aos="fade-down" data-aos-duration="500">
+              <a href="">Home</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <a href="">About</a>
+            </li>
           </ul>
 
-          <h1>Soul Kitchen</h1>
+          <h1 data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">
+            Soul Kitchen
+          </h1>
 
           <ul>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <a href="">Menu</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
+              <a href="">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <!-- Hero -->
       <section id="hero">
-        <div class="hero main-container">
+        <div
+          class="hero main-container"
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="800"
+        >
           <h4>Enjoy an unforgettable experience!</h4>
           <!-- kratos make typewriter effect on text above -->
           <h1>Soul Kitchen</h1>
           <div class="hero-cta">
-            <button>Lihat menu</button>
-            <button>Booking meja</button>
+            <button class="cta-button">Lihat menu</button>
+            <button class="cta-button">Booking meja</button>
           </div>
         </div>
       </section>
@@ -143,19 +182,19 @@
     <!-- About -->
     <section id="about">
       <div class="about main-container">
-        <p>
+        <p data-aos="fade-up">
           SOUL KITCHEN, founded in 2022, is dedicated to all those who love to
           wander far and wide. We invite you on a wholesome culinary adventure,
           where you’ll explore undiscovered gourmet experiences.
         </p>
-        <p>Thank you for creating lasting memory with us.</p>
+        <p data-aos="fade-up">Thank you for creating lasting memory with us.</p>
       </div>
     </section>
 
     <!-- Menu -->
     <section id="menu">
       <div class="menu main-container">
-        <div class="menu-title">
+        <div class="menu-title" data-aos="fade-up">
           <h5>Explore</h5>
           <h1>Our Menu</h1>
           <p>
@@ -166,7 +205,7 @@
 
         <!-- Makanan utama -->
         <div class="sub-menu">
-          <div class="sub-section-title">
+          <div class="sub-section-title" data-aos="fade-up">
             <h2>Small Bites</h2>
             <p>Order for the table and spread loves.</p>
 
@@ -175,7 +214,7 @@
 
           <!-- Detail menu dan harga -->
           <div class="menu-details">
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -201,7 +240,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="100">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -227,7 +266,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="100">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -258,7 +297,12 @@
     </section>
 
     <!-- Menu carousel food -->
-    <div class="menu-carousel">
+    <div
+      class="menu-carousel"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="100"
+    >
       <article>
         <div>
           <ul>
@@ -302,7 +346,7 @@
       <div class="menu main-container">
         <!-- Makanan utama -->
         <div class="sub-menu">
-          <div class="sub-section-title">
+          <div class="sub-section-title" data-aos="fade-up">
             <h2>The Bar</h2>
             <p>Order your favorite drinks.</p>
 
@@ -311,7 +355,7 @@
 
           <!-- Detail menu dan harga -->
           <div class="menu-details">
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -337,7 +381,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="100">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -363,7 +407,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="200">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -394,7 +438,7 @@
     </section>
 
     <!-- Menu carousel food -->
-    <div class="menu-carousel">
+    <div class="menu-carousel" data-aos="fade-up">
       <article>
         <div>
           <ul>
@@ -438,7 +482,7 @@
       <div class="menu main-container">
         <!-- Makanan utama -->
         <div class="sub-menu">
-          <div class="sub-section-title">
+          <div class="sub-section-title" data-aos="fade-up">
             <h2>Light Snack</h2>
             <p>Order your favorite snacks.</p>
 
@@ -447,7 +491,7 @@
 
           <!-- Detail menu dan harga -->
           <div class="menu-details">
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -473,7 +517,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="100">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -499,7 +543,7 @@
               </div>
             </div>
 
-            <div class="menu-detail">
+            <div class="menu-detail" data-aos="fade-up" data-aos-delay="200">
               <div class="menu-item">
                 <div>
                   <h4>Green papaya salad</h4>
@@ -530,7 +574,7 @@
     </section>
 
     <!-- Menu carousel food -->
-    <div class="menu-carousel">
+    <div class="menu-carousel" data-aos="fade-up">
       <article>
         <div>
           <ul>
@@ -571,32 +615,85 @@
 
     <!-- Reservation -->
     <section id="reservation" class="reservation main-container">
-      <div class="menu-title">
+      <div class="menu-title" data-aos="fade-up">
         <h5>Book tables</h5>
         <h1>Reservation</h1>
         <p>Contact us to find the best table for you and your friends.</p>
       </div>
 
       <div class="reservation-items">
-        <div class="reservation-item-info">
-          <div>
+        <div class="reservation-item-info" data-aos="fade-up">
+          <div class="reservation-info">
             <p>We will confirm your reservation within 24 hours.</p>
           </div>
 
-          <h3>Opening Times</h3>
+          <div class="opening-times">
+            <h3>Opening Times</h3>
 
-          <div>
-            <p>Monday - Friday</p>
-            <p>7am - 10pm</p>
+            <div>
+              <p>Monday - Friday</p>
+              <p>7am - 10pm</p>
+            </div>
+
+            <div>
+              <p>Saturday - Sunday</p>
+              <p>8am - 9pm</p>
+            </div>
           </div>
 
-          <div>
-            <p>Saturday - Sunday</p>
-            <p>8am - 9pm</p>
+          <div class="social-media">
+            <h3>Our Social Media</h3>
+            <div class="contact-info-social">
+              <a href="https://instagram.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#FFF"
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://youtube.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#FFF"
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://x.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#FFF"
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="reservation-item-form">
+        <div
+          class="reservation-item-form"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div>
             <label>Atas nama</label>
             <input type="text" placeholder="Nama meja" />
@@ -633,82 +730,88 @@
     <!-- Contact & location -->
     <div id="contact">
       <div class="contact">
-        <div class="map">
+        <div class="map" data-aos="fade-up">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.09312872685!2d99.16271577525467!3d3.327165652031974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031613e18790b15%3A0x7e1efd7757c4d15!2sTanah%20lapang%20Merdeka!5e0!3m2!1sen!2sid!4v1703163506806!5m2!1sen!2sid"
             width="100%"
-            height="600"
+            height="500"
             style="border: 0; padding: 0; margin: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="contact-info">
-          <h1>Lido Marina Village</h1>
-          <p>3434 Via Lido</p>
-          <p>Laguna Beach, CA 92663</p>
-
-          <p class="contact-info-phone">(123) 456-789</p>
-
-          <div class="contact-info-social">
-            <a href="https://instagram.com">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#FFF"
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                />
-              </svg>
-            </a>
-
-            <a href="https://youtube.com">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#FFF"
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-                />
-              </svg>
-            </a>
-
-            <a href="https://x.com">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#FFF"
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
     <!-- Footer -->
     <footer>
-      <div class="footer-items large-container">
-        <div class="footer-left">
-          &copy; 2023 Soulkitchen. All rights reserved.
+      <div class="footer-info">
+        <div class="footer-info-items main-container">
+          <div data-aos="fade-up">
+            <h3>Welcome to soul kitchen</h3>
+            <p>
+              SOUL KITCHEN, founded in 2022, is dedicated to all those who love
+              to wander far and wide.
+            </p>
+            <p>
+              We'd like to invite you on a culinary adventure, where you’ll
+              explore undiscovered gourmet experiences.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3>Visit</h3>
+            <p>317 Pacific C Hwy, Huntington, CA 92648</p>
+
+            <h3>Talk</h3>
+            <p>123.456-7</p>
+
+            <h3>Write</h3>
+            <p>eat@soulkitchen.com</p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <h3>Reservations</h3>
+              <button class="cta-button">Book your table</button>
+            </div>
+
+            <div>
+              <h3>Hours</h3>
+              <div>
+                <p>MONDAY thru FRIDAY</p>
+                <p>11am - 9pm</p>
+              </div>
+
+              <div>
+                <p>SATURDAY and SUNDAY</p>
+                <p>10am - 12pm</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-mid">Soul Kitchen</div>
+      <div class="footer-copyright">
+        <div class="footer-items large-container">
+          <div class="footer-left">
+            &copy; 2023 Soulkitchen. All rights reserved.
+          </div>
 
-        <div class="footer-right">Taste the difference</div>
+          <div class="footer-mid">Soul Kitchen</div>
+
+          <div class="footer-right">Taste the difference</div>
+        </div>
       </div>
     </footer>
     <!-- End footer -->
   </body>
+
+  <!-- Aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // once: true, // whether animation should happen only once - while scrolling down
+    });
+  </script>
 </html>

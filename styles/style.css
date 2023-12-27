@@ -18,8 +18,8 @@ Notes :
   --borderColor: #f1f1f1;
   --lineColor: #d9d9d9; /* untuk line di pre-title */
 
-  --primaryBackgroundColor: #fff;
-  --secondaryBackgroundColor: #fbfbfb;
+  --primaryBackgroundColor: #0a0b0a;
+  --secondaryBackgroundColor: #1a191a;
   --thirdBackgroundColor: #f5f3fe;
 
   --primaryIconColor: #7e74f1;
@@ -39,8 +39,9 @@ Notes :
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #0a0b0a;
+  background: var(--primaryBackgroundColor);
   color: var(--primaryTextColor);
+  overflow-x: hidden;
 }
 
 h1,
@@ -79,6 +80,22 @@ a {
 .large-container {
   width: 92.5%;
   margin: 0 auto;
+}
+
+.cta-button {
+  cursor: pointer;
+  border: 2px solid var(--white);
+  padding: 0.75rem 2rem;
+  background: transparent;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: var(--white);
+  color: #000000;
 }
 
 /* Section Classes */
@@ -210,6 +227,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hero {
@@ -370,9 +388,19 @@ header {
   gap: 3rem;
 }
 
-.reservation-item-info div,
-.reservation-item-info h3 {
+.opening-times,
+.social-media,
+.reservation-info {
+  margin-bottom: 2rem;
+}
+
+.reservation-item-info h3
+{
   margin-bottom: 1.2rem;
+}
+
+.reservation-item-info p  {
+  margin-bottom: .5rem;
 }
 
 .reservation-item-form div {
@@ -406,8 +434,9 @@ header {
 
 /* Contact & Location */
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* padding: var(--sectionPadding); */
 }
 
 .map {
@@ -431,16 +460,18 @@ header {
   margin: 1rem 0;
 }
 
-.contact-info-social a {
-  margin: 0 1rem;
-}
-
-.contact-info-social svg {
-  transform: scale(1.2);
+.contact-info-social {
+  display: flex;
+  gap: 1.5rem;
 }
 
 /* Footer */
-footer {
+/* footer {
+  padding: 2rem 0;
+  background: #2a292b;
+} */
+
+.footer-copyright {
   padding: 2rem 0;
   background: #2a292b;
 }
@@ -470,4 +501,32 @@ footer {
 
 .footer-right {
   text-align: right;
+}
+
+.footer-info {
+  background: var(--secondaryBackgroundColor);
+  padding: 3rem 0;
+}
+
+.footer-info-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 2rem;
+}
+
+.footer-info-items h3 {
+  font-size: 1.15rem;
+  /* font-weight: 500; */
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.footer-info-items p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info-items button {
+  margin-bottom: 1rem;
 }
