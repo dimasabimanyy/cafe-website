@@ -3,7 +3,6 @@
 
 /*
 Notes : 
-
 - Jost font for title
 - Poppins font for normal text
 */
@@ -79,6 +78,7 @@ a {
   margin: 0 auto;
 }
 
+/* Buttons */
 .cta-button {
   cursor: pointer;
   border: 2px solid var(--primaryThemeColor);
@@ -95,7 +95,7 @@ a {
   color: #000000;
 }
 
-/* Section Classes */
+/* General sections */
 .sub-section-title {
   text-align: center;
 }
@@ -117,7 +117,7 @@ a {
   margin: 1rem auto 2rem;
 }
 
-/* Menu Title Style */
+/* Menu Title */
 .menu-title {
   margin-bottom: 2.5rem;
   max-width: 450px;
@@ -138,23 +138,31 @@ a {
 }
 
 /* Header */
+
+/* Header */
 header {
   height: 100vh;
-  background: url("../images/food-dark.jpg");
+  background: url("../images/hero.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
-  /* we use flex here so we can fill up the remaining height in #hero */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.45);
+  /* We use flex here so we can fill up the remaining height in #hero */
   display: flex;
   flex-direction: column;
-  /* Create the parallax scrolling effect */
+  /* Parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Header Info */
+.header-shadow {
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--primaryBackgroundColor));
+}
+
+/* Top header */
 #header-info {
   padding: 0.5rem 0;
   background: var(--secondaryBackgroundColor);
@@ -179,9 +187,8 @@ header {
   font-size: 0.87rem;
 }
 
-/* because we use scale, then we need to use translate so it fit on the center position */
 .info-social a svg {
-  transform: scale(0.7) translateY(5px);
+  transform: scale(0.7) translateY(5px); /* because we use scale, then we need to use translate so it fit on the center position */
 }
 
 .header-info-items svg {
@@ -194,7 +201,7 @@ header {
   font-size: 0.8rem;
 }
 
-/* Logo and navigation for mobile */
+/* Navigation */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -243,16 +250,18 @@ header {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.3rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
+  letter-spacing: 7px;
+  font-weight: 500;
 }
 
 .hero-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap; /* agar tombol jatuh kebawah kalo width udah penuh */
+  margin-top: 1rem;
 }
 
 .hero-cta button {
@@ -271,7 +280,7 @@ header {
   color: #000000;
 }
 
-/* About */
+/* About Section */
 .about {
   max-width: 700px;
   padding: var(--sectionPadding);
@@ -294,11 +303,9 @@ header {
   text-align: center;
 }
 
-/* Menu details */
 .menu-details {
   width: 100%;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 6rem;
 }
@@ -313,7 +320,6 @@ header {
 .menu-item h4 {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  /* margin-bottom: .5rem; */
 }
 
 .menu-item p {
@@ -325,7 +331,7 @@ header {
   font-weight: 200;
 }
 
-/* Menu carousel */
+/* Carousel in Menu */
 .menu-carousel {
   width: 100%;
   overflow: hidden;
@@ -441,7 +447,7 @@ header {
 
 /* Contact & Location */
 .map {
-  margin-bottom: -5px; /* untuk nutupin space aneh bawaan dari maps */
+  margin-bottom: -5px; /* Untuk nutupin sisa space aneh bawaan dari maps */
 }
 
 .map iframe {
@@ -471,11 +477,6 @@ header {
 }
 
 /* Footer */
-/* footer {
-  padding: 2rem 0;
-  background: #2a292b;
-} */
-
 .footer-copyright {
   padding: 2rem 0;
   background: #2a292b;
@@ -522,7 +523,6 @@ header {
 
 .footer-info-items h3 {
   font-size: 1.15rem;
-  /* font-weight: 500; */
   text-transform: uppercase;
   margin-bottom: 0.8rem;
 }
