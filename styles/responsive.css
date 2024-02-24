@@ -1,4 +1,115 @@
+/* Hamburger icon animation */
+#burger-navigation {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  /* -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); */
+  transform: rotate(0deg);
+  /* -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out; */
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#burger-navigation span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  /* border-radius: 9px; */
+  opacity: 1;
+  left: 0;
+  /* -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); */
+  transform: rotate(0deg);
+  /* -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out; */
+  transition: 0.25s ease-in-out;
+}
+
+#burger-navigation span:nth-child(1) {
+  top: 0px;
+}
+
+#burger-navigation span:nth-child(2) {
+  top: 13px;
+}
+
+#burger-navigation span:nth-child(3) {
+  top: 26px;
+}
+
+#burger-navigation.open span:nth-child(1) {
+  top: 13px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#burger-navigation.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#burger-navigation.open span:nth-child(3) {
+  top: 13px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/* End hamburger icon */
+
+/* Mobile navigation */
+#header-info {
+  z-index: 999 !important;
+  position: relative;
+}
+
+.nav-mobile {
+  z-index: 99 !important;
+  position: relative;
+  background: #000;
+}
+
+.nav-mobile-main {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: 0.3s ease-in-out;
+  background: #0b7282;
+  z-index: 9;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+.menu-active {
+  transform: translateY(0%);
+}
+/* End mobile navigation */
+
 @media screen and (max-width: 1000px) {
+  p, span {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  /* Mobile Navigation */
   .info-social {
     display: none;
   }
@@ -13,7 +124,12 @@
 
   #nav-mobile {
     display: block;
+
+    h1 {
+      font-size: 1.4rem;
+    }
   }
+  /* End mobile navigation */
 
   .menu-carousel img {
     width: 300px;

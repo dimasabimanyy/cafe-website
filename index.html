@@ -9,9 +9,6 @@
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Javascript -->
-    <script src="./script/main.js"></script>
-
     <title>Cafe Website</title>
   </head>
   <body>
@@ -149,27 +146,34 @@
 
       <!-- Logo and navigation for mobile -->
       <nav id="nav-mobile">
-        <div class="nav large-container">
-          <ul>
-            <li
+        <div class="nav-mobile">
+          <div class="nav large-container">
+            <h1
               data-aos="fade-down"
               data-aos-duration="500"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
-              <a href="">Menu</a>
-            </li>
-            <li
-              data-aos="fade-down"
-              data-aos-duration="500"
-              data-aos-delay="400"
-            >
-              <a href="">Contact</a>
-            </li>
-          </ul>
+              Soul Kitchen
+            </h1>
 
-          <h1 data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">
-            Soul Kitchen
-          </h1>
+            <div id="burger-navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-mobile-main">
+          <div>
+            <a href="#">Home</a>
+          </div>
+          <div>
+            <a href="#">About</a>
+          </div>
+          <div>
+            <a href="#">Career</a>
+          </div>
         </div>
       </nav>
 
@@ -705,44 +709,61 @@
             </div>
           </div>
 
-          <div
+          <form
             class="reservation-item-form"
             id="reservation-item-form"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             <div>
-              <label>Atas nama</label>
-              <input type="text" placeholder="Nama meja" />
+              <label for="table_name">Atas Nama</label>
+              <input
+                name="table_name"
+                type="text"
+                id="table_name"
+                placeholder="Nama meja"
+              />
             </div>
 
             <div>
-              <label>Party size</label>
-              <input type="text" placeholder="Jumlah orang" />
+              <label for="table_capacity">Jumlah Orang</label>
+              <input
+                type="number"
+                name="table_capacity"
+                id="table_capacity"
+                placeholder="Jumlah orang"
+              />
             </div>
 
             <div>
-              <label>Tanggal & Waktu</label>
-              <input type="text" placeholder="Tanggal kedatangan" />
+              <label for="order_date"
+                >Tanggal & Waktu (Waktu Indonesia Barat)</label
+              >
+              <input
+                name="order_date"
+                type="datetime-local"
+                id="order_date"
+                placeholder="Tanggal kedatangan"
+              />
             </div>
 
             <div>
-              <label>Pesan</label>
+              <label for="order">Pesan</label>
               <textarea
-                name="message"
-                id="message"
+                name="order"
+                id="order"
                 cols="30"
                 rows="10"
-                placeholder="Pesan"
+                placeholder="Order menu kamu disini"
               ></textarea>
             </div>
 
             <div>
-              <a href="https://wa.me/083826219440?text=mau pesen meja bro">
+              <a>
                 <button>Kirim</button>
               </a>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -825,7 +846,10 @@
       </div>
     </footer>
     <!-- End footer -->
+
+    <!-- Javascript -->
   </body>
+  <script src="./js/script.js" type="text/javascript"></script>
 
   <!-- Aos script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
