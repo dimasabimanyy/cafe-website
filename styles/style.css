@@ -315,6 +315,7 @@ header {
   justify-content: space-between;
   margin-bottom: 1rem;
   text-align: left;
+  gap: 1rem;
 }
 
 .menu-item h4 {
@@ -453,23 +454,6 @@ header {
 .map iframe {
   height: 450px;
 }
-
-/* .contact-info {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.contact-info h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-} */
-
-/* .contact-info-phone {
-  margin: 1rem 0;
-} */
 
 .contact-info-social {
   display: flex;

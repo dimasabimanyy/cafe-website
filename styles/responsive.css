@@ -142,10 +142,10 @@
   }
 
   .menu-carousel article {
-    display: flex;
-    width: 800%;
-    animation: bannermove 10s linear infinite;
+    width: 320%;
+    animation: bannermove 20s linear infinite;
   }
+  /* width: 840%; for mobile*/
 
   .footer-items {
     grid-template-columns: 1fr;
