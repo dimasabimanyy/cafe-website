@@ -27,3 +27,15 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
   mobileNavigation.classList.toggle("menu-active");
 });
+
+// Carousel
+const mainCourseCarousel = document
+  .querySelector(".main-course-carousel-slide")
+  .cloneNode(true);
+document.querySelector(".main-course-carousel").appendChild(mainCourseCarousel);
+
+const drinksCarousel = document.querySelector(".drinks-carousel-slide").cloneNode(true);
+document.querySelector(".drinks-carousel").appendChild(drinksCarousel);
+
+const snacksCarousel = document.querySelector(".snacks-carousel-slide").cloneNode(true);
+document.querySelector(".snacks-carousel").appendChild(snacksCarousel);

@@ -133,19 +133,9 @@
   }
   /* End mobile navigation */
 
-  .menu-carousel img {
-    width: 300px;
-  }
-
   .map iframe {
     height: 400px;
   }
-
-  .menu-carousel article {
-    width: 320%;
-    animation: bannermove 20s linear infinite;
-  }
-  /* width: 840%; for mobile*/
 
   .footer-items {
     grid-template-columns: 1fr;
@@ -201,8 +191,12 @@
   .menu {
     padding: 3rem 0;
   }
-  .menu-carousel {
-    margin-bottom: 3rem;
+
+  .menu-img {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    display: inline-block;
   }
 
   .reservation-item-info {
