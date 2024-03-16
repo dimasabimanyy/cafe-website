@@ -1,4 +1,4 @@
-/* Hamburger icon animation */
+/* Hamburger icon and animation */
 #burger-navigation {
   width: 40px;
   height: 20px;
@@ -213,6 +213,3 @@
     gap: 1rem;
   }
 }
-
-/* @media screen and (max-width: 734px) {
-} */

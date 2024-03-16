@@ -8,8 +8,6 @@ form.addEventListener("submit", (event) => {
   const date = document.querySelector("#order_date").value;
   const order = document.querySelector("#order").value;
 
-  console.log({ tableName, tableSize, date, order });
-
   const orderText = `Halo, saya ingin reservasi meja untuk ${tableSize} orang, atas name ${tableName} di tanggal ${date}
   
   Order : 
@@ -34,8 +32,12 @@ const mainCourseCarousel = document
   .cloneNode(true);
 document.querySelector(".main-course-carousel").appendChild(mainCourseCarousel);
 
-const drinksCarousel = document.querySelector(".drinks-carousel-slide").cloneNode(true);
+const drinksCarousel = document
+  .querySelector(".drinks-carousel-slide")
+  .cloneNode(true);
 document.querySelector(".drinks-carousel").appendChild(drinksCarousel);
 
-const snacksCarousel = document.querySelector(".snacks-carousel-slide").cloneNode(true);
+const snacksCarousel = document
+  .querySelector(".snacks-carousel-slide")
+  .cloneNode(true);
 document.querySelector(".snacks-carousel").appendChild(snacksCarousel);
