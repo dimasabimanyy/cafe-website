@@ -1,5 +1,5 @@
-/* Poppins, Roboto & Jost */
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+/* Poppins & Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*
 Notes : 
@@ -8,18 +8,12 @@ Notes :
 */
 
 :root {
-  --primaryThemeColor: #fff;
-
-  --primaryTextColor: #fff; /* Untuk title atau judul */
-  --secondaryTextColor: #aaa; /* Untuk text biasa seperti paragraph contohnya */
-
-  --borderColor: #f1f1f1;
-  --lineColor: #d9d9d9; /* untuk line di pre-title */
-
-  /* Background colors */
+  /* Colors */
+  --counterBackgroundColor: #fff;
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #aaa;
   --primaryBackgroundColor: #0a0b0a;
   --secondaryBackgroundColor: #1a191a;
-  --thirdBackgroundColor: #f5f3fe;
 
   /* Sizing */
   --sectionPadding: 6rem 0;
@@ -94,17 +88,17 @@ a {
 /* Buttons */
 .cta-button {
   cursor: pointer;
-  border: 2px solid var(--primaryThemeColor);
+  border: 2px solid var(--counterBackgroundColor);
   padding: 0.75rem 2rem;
   background: transparent;
-  color: var(--primaryThemeColor);
+  color: var(--counterBackgroundColor);
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s;
 }
 
 .cta-button:hover {
-  background: var(--primaryThemeColor);
+  background: var(--counterBackgroundColor);
   color: #000000;
 }
 
@@ -260,22 +254,6 @@ header {
   margin-top: 1rem;
 }
 
-/* .hero-cta button {
-  cursor: pointer;
-  border: 2px solid var(--primaryThemeColor);
-  padding: 0.75rem 2rem;
-  background: transparent;
-  color: var(--primaryThemeColor);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.3s;
-}
-
-.hero-cta button:hover {
-  background: var(--primaryThemeColor);
-  color: #000000;
-} */
-
 /* About Section */
 .about {
   max-width: 700px;
@@ -354,7 +332,7 @@ header {
   Infinite karena kita mau animasi nya jalan terus
   Linear karena kita mau jalan animasi nya itu konstan kecepatannya, jadi ngga tiba" lebih cepat atau tiba" lebih pelan
   */
-  animation: 20s slide infinite linear;
+  animation: 10s slide infinite linear;
 }
 
 .menu-img {
@@ -434,7 +412,7 @@ header {
   border: 1px solid #444444;
   padding: 0.5rem 1.3rem;
   font-family: "Poppins", sans-serif;
-  color: var(--primaryThemeColor);
+  color: var(--counterBackgroundColor);
 }
 
 .reservation-item-form textarea {
