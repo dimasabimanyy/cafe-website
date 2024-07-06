@@ -332,7 +332,7 @@ header {
   Infinite karena kita mau animasi nya jalan terus
   Linear karena kita mau jalan animasi nya itu konstan kecepatannya, jadi ngga tiba" lebih cepat atau tiba" lebih pelan
   */
-  animation: 10s slide infinite linear;
+  animation: 23s slide infinite linear;
 }
 
 .menu-img {

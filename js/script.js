@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
   ${order || "*Pesan ditempat"}
   `;
 
-  window.location.replace(`https://wa.me/083826219440?text=${orderText}`);
+  window.location.replace(`https://wa.me/34613220205?text=${orderText}`);
 });
 
 // Hamburger icon animation
