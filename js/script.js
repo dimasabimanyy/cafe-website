@@ -1,18 +1,26 @@
-// Carousel menu
-const mainCourseCarousel = document
-  .querySelector(".main-course-carousel-slide")
-  .cloneNode(true);
-document.querySelector(".main-course-carousel").appendChild(mainCourseCarousel);
+const initCarousel = () => {
+  const mainCourse = document.querySelector(".main-course-carousel");
+  const drinks = document.querySelector(".drinks-carousel");
+  const snacks = document.querySelector(".snacks-carousel");
 
-const drinksCarousel = document
-  .querySelector(".drinks-carousel-slide")
-  .cloneNode(true);
-document.querySelector(".drinks-carousel").appendChild(drinksCarousel);
+  for (let i = 0; i < 5; i++) {
+    const mainCourseCarousel = document
+      .querySelector(".main-course-carousel-slide")
+      .cloneNode(true);
+    const drinksCarousel = document
+      .querySelector(".drinks-carousel-slide")
+      .cloneNode(true);
+    const snacksCarousel = document
+      .querySelector(".snacks-carousel-slide")
+      .cloneNode(true);
 
-const snacksCarousel = document
-  .querySelector(".snacks-carousel-slide")
-  .cloneNode(true);
-document.querySelector(".snacks-carousel").appendChild(snacksCarousel);
+    mainCourse.appendChild(mainCourseCarousel);
+    drinks.appendChild(drinksCarousel);
+    snacks.appendChild(snacksCarousel);
+  }
+};
+
+initCarousel();
 
 // Form reservation
 const form = document.querySelector("#reservation-item-form");
